@@ -8,7 +8,7 @@
           name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         />
-        <title>Visitor Entry</title>
+        <title>Visitor Form</title>
         <link rel="icon" type="image/png" href="images/LOGO.svg" />
     
         <!-- CSS Assets -->
@@ -46,65 +46,43 @@
           class="min-h-100vh flex grow bg-slate-50 dark:bg-navy-900"
           x-cloak
         >
-          <main class="grid w-full grow grid-cols-1 place-items-center">
-            <div class="w-full max-w-[26rem] p-4 sm:px-5">
-              <div class="text-center">
+          <main class="grid w-full grow grid-cols-1 place-items-center p-4">
+            <div class="card mt-5 rounded-lg p-5 lg:p-7">
+            <div class="place-items-center">
                 <img
                   class="mx-auto"
                   src="images/logowithname.png"
                   alt="logo"
                 />
-                <div class="mt-4">
-                  <h2
-                    class="text-2xl font-semibold text-slate-600 dark:text-navy-100"
-                  >
-                    Welcome To Visitor CheckIn
-                  </h2>
+                
+                 <br>
 
-                </div>
-              </div>
-              <div class="card mt-5 rounded-lg p-5 lg:p-7">
-                <label class="relative flex">
-                    <br>
-                    <label class="block">
-                        <span>Select a company to visit</span>
-                        <select
-                          class="form-select mt-1.5 w-full rounded-full border border-slate-300 bg-white px-4 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
-                        >
-                          <option>Corporate event</option>
 
-                        </select>
-                      </label>
-                  <span
-                    class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent"
-                  >
-                    
-                  </span>
-                </label>
-               <br>
-                <div class="mt-4 flex items-center space-x-2">
-                  <input
-                    class="form-checkbox is-basic h-5 w-5 rounded border-slate-400/70 checked:border-primary checked:bg-primary hover:border-primary focus:border-primary dark:border-navy-400 dark:checked:border-accent dark:checked:bg-accent dark:hover:border-accent dark:focus:border-accent"
-                    type="checkbox"
-                  />
-                  <p class="line-clamp-1">
-                    I agree with
-                    <a
-                      href="#"
-                      class="text-slate-400 hover:underline dark:text-navy-300"
+                <br>
+                   <br>
+                   <label class="block">
+                    <span>Select Company</span>
+                    <select
+                      class="form-select mt-1.5 w-full rounded-full border border-slate-300 bg-white px-4 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
                     >
-                      privacy policy
-                    </a>
-                  </p>
-                </div>
-                <button
+                      <option></option>
+                    </select>
+                  </label>
+                  <br>
+                  <label class="block">
+                    <span>Enter Code</span>
+                    <input
+                      class="form-input w-full rounded-full border border-slate-300 bg-transparent px-4 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+                      placeholder="Meeting Code"
+                      type="text"
+                    />
+                  </label>
+                  <button
                   class="btn mt-5 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
                 >
-                  Start
+                  Check
                 </button>
                 
-               
-               
               </div>
             </div>
           </main>
