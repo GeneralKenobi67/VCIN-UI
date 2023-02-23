@@ -409,7 +409,139 @@
 
       <!-- Main Content Wrapper -->
       <main class="main-content w-full px-[var(--margin-x)] pb-8">
-       
+        <h1 class="text-3xl font-semibold my-5 px-5">Add Employee</h1>
+        <div class="card col-span-12 lg:col-span-8 p-5">
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+
+            <label class="block">
+              <span>Employee Name</span>
+              <span class="relative mt-1.5 flex">
+                <input
+                  class="form-input peer w-full rounded-full border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+                  placeholder="Enter Employee Name"
+                  type="text"
+                />
+                <span
+                  class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent"
+                >
+                  <i class="fa-regular fa-user text-base"></i>
+                </span>
+              </span>
+            </label>
+            <label class="block">
+              <span>Enter Employee EMail</span>
+              <span class="relative mt-1.5 flex">
+                <input
+                  class="form-input peer w-full rounded-full border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+                  placeholder="Enter Employee EMail"
+                  type="text"
+                />
+                <span
+                  class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent"
+                >
+                  <i class="fa-regular fa-envelope text-base"></i>
+                </span>
+              </span>
+            </label>
+            <label class="block">
+              <span>Select Branch</span>
+              <span class="relative mt-1.5 flex">
+            <select
+            class="form-input peer w-full rounded-full border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+            >
+            <option>Corporate event</option>
+            </select>
+            <span
+            class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent"
+          >
+            <i class="fa-regular fa-envelope text-base"></i>
+          </span>
+              </span>
+            </label> <br>
+            <button
+                  class="btn mt-5 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
+                >
+                  Add Employee
+                </button>
+          </div>
+        </div>
+
+      <!-- From HTML Table -->
+      <div class="card pb-4 my-5 p-3">
+        <div
+          class="my-3 flex h-8 items-center justify-between px-4 sm:px-5"
+        >
+          <h2
+            class="font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100 lg:text-base"
+          >
+            Employee Data
+          </h2>
+          
+        </div>
+        <div>
+          <div
+            x-data
+            x-init="$el._x_grid =  new Gridjs.Grid({
+            from: $refs.table,
+            sort: true,
+            search: true,
+          }).render($refs.wrapper);"
+          >
+            <div class="is-scrollbar-hidden min-w-full overflow-x-auto">
+              <table x-ref="table" class="w-full text-left">
+                <thead>
+                  <tr>
+                    <th
+                      class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5"
+                    >
+                      Sr No.
+                    </th>
+                    <th
+                      class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5"
+                    >
+                      Name
+                    </th>
+                    <th
+                      class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5"
+                    >
+                      EMail
+                    </th>
+                    <th
+                      class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5"
+                    >
+                      Branch
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                      ID 1
+                    </td>
+                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                      Cy Ganderton
+                    </td>
+                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                      Quality Control Specialist
+                    </td>
+                    <td class="whitespace-nowrap px-4 py-3 sm:px-5">
+                      Blue
+                    </td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+            </div>
+            <div><div x-ref="wrapper"></div></div>
+          </div>
+        </div>
+      </div>
+
+
+
+
       </main>
     </div>
     <!-- 

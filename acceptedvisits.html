@@ -415,7 +415,7 @@
         <div
           class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4"
         >
-          <div class="card">
+          <div class="card p-3">
             <div class="p-2 text-right">
               <div
                 x-data="usePopper({placement:'bottom-end',offset:4})"
@@ -471,44 +471,15 @@
                 <p>konnor@example.com</p>
               </div>
               <div class="mt-6 grid w-full grid-cols-2 gap-2">
-                <button
-                  class="btn space-x-2 bg-success px-0 font-medium text-white hover:bg-success-focus focus:bg-success-focus active:bg-success-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-width="2"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
-                  <span>Accept</span>
-                </button>
-                <button
-                  class="btn space-x-2 bg-error px-0 font-medium text-white hover:bg-error-focus focus:bg-error-focus active:bg-error-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                  <span>Reject</span>
-                </button>
               </div>
+              
             </div>
+                           
+            <button
+            class="btn space-x-2 bg-error px-0 font-medium text-white hover:bg-error-focus focus:bg-error-focus active:bg-error-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90 "
+          >
+            <span>End Visit</span>
+          </button>
           </div>
                        </div>
             </div>
